@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Favicon.jpg">
+
+
+    <title>Harmful Trend Resistance</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', 'contextmenu', event => event.preventDefault());
+        const overlay = document.querySelector('.overlay');
+        overlay.style.display = 'block';
+    </script>
+    
+    <script>
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.charCode === 16 || e.keyCode === 80)) {
+                e.preventDefault();
+                alert('Printing is disabled');
+            }
+        });
+
+        window.onbeforeprint = function() {
+            alert('Printing is disabled');
+            return false;
+        };
+</script>
+<script src="scrollreveal.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="Favicon.jpg" width="150" height="150" id="logo">
+            <h1>Harmful Trend Resistance</h1>
+            <nav>
+                <div class="menu"></div>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="content animated-element">
+        <h2>Spreading awareness</h2>
+        <p> Social media platforms have transformed the way we communicate, connect, and share our lives. While they offer incredible opportunities for global connection, the rapid proliferation of harmful social media trends poses a grave threat to individuals and communities. Social media has become a powerful tool and ever-present part of our lives. However, despite the many advantages and comforts of social media, there are some dangerous health effects associated with viral trends popularized by these apps.</p><img src="image 4.png" id="img">
+        <p>Harmful trends, such as cyberbullying, online harassment, and the spread of misinformation, have gained a disturbing foothold in our virtual landscape. These trends often target individuals based on their beliefs, identities, or simply for being themselves. The consequences can be severe, impacting the mental well-being of those subjected to hate and harassment. Mental health concerns are at the forefront of these dangers. The constant exposure to negative content, abusive language, and relentless trolling can lead to stress, anxiety, and depression. The impact is profound, extending to all age groups and demographics. No one is immune to the emotional toll of online hate.</p>
+        <p>We invite you to join this essential movement to raise awareness and combat harmful social media trends. Together, we can be a force for positive change in the digital realm, advocating for a more inclusive and empathetic online environment where everyone can thrive.  Your participation is crucial. By educating ourselves and others, we can help mitigate the dangers and foster a more compassionate and informed online community. Together, we can create a safer digital space for present and future generations.</p>
+        <p><button id="pdf_one" onclick="window.open('Harmful social media trends from online.pdf', '_blank')">This</button> pdf shows the harmful trends of using social media posted by the counsellor of education at University of Ilorin. </p>
+    </div>
+    <div class="content animated-element">
+        <h2>Understanding the Dangers of Harmful Social Media Trends</h2>
+        <p><img src="image 8.png" id="img">
+            <img src="image 5.png" id="img1">Social media has become an integral part of our lives, connecting us with friends and the world at large. However, beneath the surface of this virtual realm lies a darker side—harmful social media trends that pose serious threats to individuals and society.
+        </p>
+        <p>
+            Harmful trends can encompass various forms, including cyberbullying, online harassment, hate speech, misinformation, and more. These trends can lead to dire consequences, such as mental health issues, division among communities, and the spread of false information.
+        </p><img src="image 7.jpg" id="img">
+        <h3>The Impact on Mental Health</h3>
+        <p>
+            One of the most concerning aspects of harmful social media trends is their impact on mental health. The constant exposure to negative content, trolling, and cyberbullying can lead to stress, anxiety, and depression. It's crucial to recognize that these dangers are not limited to one age group or demographic; they affect people of all backgrounds.
+        </p><img src="image 9.jpg" id="img">
+        <h3>Fueling Division and Hate</h3>
+        <p>
+            Harmful trends often perpetuate division and hate among individuals and communities. They can be used as a platform for discrimination, racism, and other forms of prejudice. By spreading awareness of these dangers, we can work toward creating a more inclusive and empathetic online environment.
+        </p>
+        <h3>Join the Fight Against Harmful Trends</h3>
+        <p>
+            You have the power to make a difference. By staying informed, raising awareness, reporting harmful content, and supporting anti-bullying campaigns, you can be part of the solution. Together, we can create a safer and more positive online world.
+        </p>
+        <p>
+            <button id="pdf_one" onclick="window.open('57-IJCSE-02480.pdf', '_blank')">This</button> pdf shows the peril of harmful social media trends posted by Waseem Akram who has expertise in this topic.
+        </p>
+    </div>  
+    <div class="google-form animated-element">        
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJC8sR4CJSpU8HKFvB0RbcUSqL13udM0E59XBktt3aCYRy2Q/viewform?embedded=true" width="1450" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    
+    
+<div class="overlay animated-element">
+    <script>
+        const overlay = document.querySelector('.overlay');
+        overlay.style.display = 'block';
+    </script>
+</div>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <h3>Harmful Trend Resistance</h3><br><br><a href="https://www.instagram.com/harmfultrendresistance_/" id="insta"><img src="insta icon.jpg" width="50 px" height="50 px"></a>
+                <p id="footer_text">Please follow our instagram account to get more information about the topic</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXJi3xEU2cb6AeC74znXNuq-Rcqlslo1cqZd893aeDFFyUBA/viewform?embedded=true" alt="Form for glitches and feedback" width="600 px" height="400 px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><br><br><br>
+                <p id="small_footer_text">This website was created by Tirth Saraiya for a school project. Team members are Arjun Sethi, Mayank Pandya, Aarush Mistry and Tirth Saraiya who are the students of RCIS Dahisar, Mumbai, India.</p>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // Add a click event listener to the 'pdf_one' button
+        const pdfButton = document.getElementById('pdf_one');
+        pdfButton.addEventListener('click', function () {
+            // Handle the button click (e.g., open the PDF)
+            // Example: window.open('Harmful social media trends from online.pdf', '_blank');
+        });
+    </script>
+    <script>
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
+    </script>
+    
+    <script src="scroll-animation.js"></script>
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        // Hide the overlay
+        const overlay = document.querySelector('.overlay');
+        overlay.style.display = 'none';
+
+        // Disable Ctrl+P keyboard shortcut
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'p') {
+                event.preventDefault();
+                alert("Printing is disabled for this page.");
+            }
+        });
+    </script>
+</body>
+</html>
